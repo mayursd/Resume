@@ -12,12 +12,31 @@
     }
     
     .container {
-      max-width: 600px;
+      max-width: 800px;
       margin: 0 auto;
       background-color: #fff;
       padding: 30px;
-      border-radius: 5px;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-image {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-right: 30px;
+    }
+    
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
     }
     
     h1 {
@@ -30,17 +49,12 @@
       color: #555;
       font-size: 20px;
       margin-top: 30px;
+      margin-bottom: 10px;
     }
     
     p {
       color: #666;
       line-height: 1.5;
-    }
-    
-    .profile-image {
-      max-width: 200px;
-      border-radius: 50%;
-      margin-bottom: 20px;
     }
     
     .social-icons {
@@ -93,29 +107,42 @@
 </head>
 <body>
   <div class="container">
-    <h1>Your Name</h1>
-    <img src="path-to-your-profile-image.jpg" alt="Profile Picture" class="profile-image">
-    <ul class="social-icons">
-      <li><a href="https://github.com/your-username"><img src="github-icon.png" alt="GitHub"></a></li>
-      <li><a href="https://twitter.com/your-username"><img src="twitter-icon.png" alt="Twitter"></a></li>
-      <li><a href="https://linkedin.com/in/your-username"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
-      <!-- Add more social media icons and links as needed -->
-    </ul>
-    <h2 class="purple">About Me</h2>
-    <p>
-      Write a brief description of yourself here.
-    </p>
-    <h2 class="blue">Projects</h2>
-    <ul>
-      <li><a href="https://github.com/your-username/project-1">Project 1</a></li>
-      <li><a href="https://github.com/your-username/project-2">Project 2</a></li>
-      <li><a href="https://github.com/your-username/project-3">Project 3</a></li>
-    </ul>
-    <h2 class="green">Contact</h2>
-    <p>
-      Feel free to reach out to me via email or through my social media profiles.
-    </p>
-    <a href="path-to-your-resume.pdf" class="download-link">Download Resume (PDF)</a>
+    <div class="profile">
+      <img src="path-to-your-profile-image.jpg" alt="Profile Picture" class="profile-image">
+      <div>
+        <h1>Your Name</h1>
+        <ul class="social-icons">
+          <li><a href="https://github.com/your-username"><img src="github-icon.png" alt="GitHub"></a></li>
+          <li><a href="https://twitter.com/your-username"><img src="twitter-icon.png" alt="Twitter"></a></li>
+          <li><a href="https://linkedin.com/in/your-username"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+          <!-- Add more social media icons and links as needed -->
+        </ul>
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2 class="purple">About Me</h2>
+      <p>
+        Write a brief description of yourself here.
+      </p>
+    </div>
+    
+    <div class="card">
+      <h2 class="blue">Projects</h2>
+      <ul>
+        <li><a href="https://github.com/your-username/project-1">Project 1</a></li>
+        <li><a href="https://github.com/your-username/project-2">Project 2</a></li>
+        <li><a href="https://github.com/your-username/project-3">Project 3</a></li>
+      </ul>
+    </div>
+    
+    <div class="card">
+      <h2 class="green">Contact</h2>
+      <p>
+        Feel free to reach out to me via email or through my social media profiles.
+      </p>
+      <a href="path-to-your-resume.pdf" class="download-link">Download Resume (PDF)</a>
+    </div>
   </div>
 </body>
 </html>
