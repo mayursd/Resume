@@ -141,7 +141,7 @@
       <p>
         Feel free to reach out to me via email or through my social media profiles.
       </p>
-      <a href="path-to-your-resume.pdf" class="download-link">Download Resume (PDF)</a>
+      <a href="path-to-your-resume.pdf" class="download-link" onclick="trackDownload()">Download Resume (PDF)</a>
     </div>
   </div>
 
@@ -158,10 +158,20 @@
       });
     });
 
-    const downloadLink = document.querySelector('.download-link');
-    downloadLink.addEventListener('click', () => {
-      // Add code to track the download event if necessary
-    });
+    function trackDownload() {
+      // Add code to track the download event
+      // For example, using Google Analytics event tracking
+      ga('send', 'event', 'Resume', 'Download', 'Resume Downloaded');
+    }
+  </script>
+  
+  <!-- Add your Google Analytics tracking code here -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-059C1T6RH7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-059C1T6RH7');
   </script>
 </body>
 </html>
