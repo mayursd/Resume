@@ -144,5 +144,24 @@
       <a href="path-to-your-resume.pdf" class="download-link">Download Resume (PDF)</a>
     </div>
   </div>
+
+  <script>
+    // JavaScript code goes here
+    const socialIcons = document.querySelectorAll('.social-icons img');
+    socialIcons.forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        icon.style.transform = 'scale(1.2)';
+      });
+
+      icon.addEventListener('mouseout', () => {
+        icon.style.transform = 'scale(1)';
+      });
+    });
+
+    const downloadLink = document.querySelector('.download-link');
+    downloadLink.addEventListener('click', () => {
+      // Add code to track the download event if necessary
+    });
+  </script>
 </body>
 </html>
